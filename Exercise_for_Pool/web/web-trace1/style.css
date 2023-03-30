@@ -1,7 +1,232 @@
 @charset "utf-8";
 
-/* 
-.example {
-    color: red;
-} 
-*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+}
+
+.site-title {
+	font-weight: 540;
+}
+
+.cover {
+	margin-bottom: 50px;
+}
+
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto 100px auto;
+	padding: 0 4%;
+	font-size: 0.9rem;
+}
+
+.section-title {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 65px;
+}
+
+/* header section */
+#header {
+	max-width: 960px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0 4%;
+}
+
+#header h1 a {
+	color: black;
+}
+
+#header ul {
+	display: flex;
+}
+
+#header ul li {
+	padding-right: 20px;
+}
+
+#header ul li a {
+	color: black;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+#header ul li a:hover {
+	opacity: 0.5;
+}
+
+.cover img {
+	width: 100%;
+	object-fit: cover;
+}
+
+/* about section */
+
+#about ul {
+	margin-bottom: 30px;
+}
+
+#about ul li:first-child {
+	margin-bottom: 50px;
+}
+
+/* works section */
+#works ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+#works ul li {
+	width: 31%;
+	margin-bottom: 23px;
+}
+
+/* news */
+
+#news dl {
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 1px solid #c8c8c8;
+	margin-bottom: 20px;
+}
+
+#news dt {
+	width: 20%;
+	border-bottom: 1px solid #c8c8c8;
+	padding: 15px;
+}
+
+#news dd {
+	width: 80%;
+	border-bottom: 1px solid #c8c8c8;
+	padding: 15px;
+}
+
+/* contact */
+#contact form div {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+#contact form div label {
+	width: 20%;
+}
+
+#contact form div input,
+#contact form div textarea {
+	width: 80%;
+	border: 1px solid #c8c8c8;
+	padding: 10px;
+	outline: none;
+}
+
+#contact form div textarea {
+	height: 10rem;
+}
+
+#contact form button {
+	display: block;
+	margin: 0 auto;
+	background-color: black;
+	color: white;
+	width: 200px;
+	padding: 15px 0;
+	margin-top: 40px;
+	transition: all 0.2s;
+}
+
+#contact form button:hover {
+	background-color: white;
+	color: black;
+}
+
+/* footer */
+#footer {
+	background-color: black;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+}
+
+#footer p {
+	color: white;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+/* sp */
+@media screen and (max-width: 600px) {
+	/* header */
+	#header {
+		flex-direction: column;
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.site-title {
+		margin-top: 20px;
+	}
+
+	/* works */
+	#works ul {
+		flex-direction: column;
+	}
+
+	#works ul li {
+		width: 100%;
+	}
+
+	/* news */
+	#news dl {
+		flex-direction: column;
+	}
+
+	#news dt {
+		width: 100%;
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+
+	#news dd {
+		width: 100%;
+		padding-top: 0;
+	}
+
+	/* contact */
+	#contact form div {
+		flex-direction: column;
+	}
+
+	#contact form div input,
+	#contact form div textarea {
+		width: 100%;
+	}
+}
