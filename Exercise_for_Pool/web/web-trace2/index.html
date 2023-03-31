@@ -1,28 +1,121 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title>サイトタイトル</title>
-        <meta name="description" content="ディスクリプションを入力">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="">
-        <!-- [if lt IE 9] -->
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-        <!-- [endif] -->
-        <script src="main.js"></script>
-    </head>
-    <body>
-        <!----- header----->
-        <header>ヘッダー</header>
-        <!----- /header ----->
-        
-        <!----- main ----->
-        <main></main>
-        <!----- /main ----->
-        
-        <!----- footer ----->
-        <footer></footer>
-        <!----- /footer ----->
-    </body>
+	<head>
+		<meta charset="utf-8" />
+		<title>サイトタイトル</title>
+		<meta name="description" content="ディスクリプションを入力" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		<!-- [if lt IE 9] -->
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<!-- [endif] -->
+		<!-- <script src="main.js"></script> -->
+	</head>
+	<body>
+		<!----- header----->
+		<header id="header">
+			<h1>
+				<a href="https://www.try110.com/"
+					><img src="./img 2/logo.png" alt=""
+				/></a>
+			</h1>
+		</header>
+		<!----- /header ----->
+
+		<!----- main ----->
+		<main>
+			<div class="main-img">
+				<picture>
+					<source media="(max-width:600px)" srcset="" />
+					<img src="./img 2/mainImg-pc.png" alt="" />
+				</picture>
+			</div>
+			<section id="videoSection" class="wrapper">
+				<h2><img src="./img 2/hd_index_001-pc.png" alt="" /></h2>
+				<ul class="flex-box">
+					<li>
+						<h3>防災性編</h3>
+						<video
+							src="https://www.try110.com/bousai_kawara/files/mov/tsuruya901a_anie.mp4"
+							controls
+						></video>
+					</li>
+					<li>
+						<h3>耐久性編</h3>
+						<video
+							src="https://www.try110.com/bousai_kawara/files/mov/tsuruya902a_anie.mp4"
+							controls
+						></video>
+					</li>
+				</ul>
+				<p>
+					日本の屋根といえば「瓦」。でも最近は「地震に弱い」という誤解の声がちらほら…。<br />そんな今こそ、進化した瓦「防災瓦」がオススメです。<br />熊本地震の調査結果によると、以前の瓦の屋根にはたくさんのズレ・脱落が見つかりましたが、「防災瓦」の屋根にはほとんど被害が見当たりませんでした。<br />では、防災瓦は一体何が違うのか…。そのヒミツ、お教えします！
+				</p>
+				<div class="btn-box flex-box">
+					<button>
+						<a href="http://www.try110.com/" class="btn"
+							>鶴弥コーポレートサイトへ</a
+						>
+					</button>
+					<button>
+						<a href="https://www.try110.com/catalog/" class="btn">資料請求</a>
+					</button>
+				</div>
+				<div class="hint-box flex-box">
+					<div class="hint">
+						<img src="./img 2/img_index_001-pc.png" alt="" />
+						<p>
+							以前の土葺き工法のように重い土を使わず、屋根重量を約半分程度に軽量化しました。
+						</p>
+					</div>
+					<div class="hint">
+						<img src="./img 2/img_index_002-pc.png" alt="" />
+						<p>
+							すべての瓦を釘やネジでしっかり固定。瓦同士も固定し、ズレや脱落を防止します。
+						</p>
+					</div>
+					<div class="hint">
+						<img src="./img 2/img_index_003-pc.png" alt="" />
+						<p>
+							屋根の棟部分を金具などでしっかり固定するガイドライン工法で崩壊を防ぎます。
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="section1" class="wrapper">
+				<h2>
+					<img src="./img 2/box1_hd_index_001-pc.png" alt="" />
+					<img src="./img 2/box1_img_index_003.png" alt="" />
+					<img src="./img 2/box1_img_index_001-pc.png" alt="" />
+				</h2>
+				<p>
+					倒れた家屋。散乱した瓦。阪神・淡路大震災や東日本大震災、そして2016年4月の熊本地震においても、様々なメディアを通じて「瓦屋根の家は地震に弱い」といった報道やイメージが一斉に広がりました。はたして瓦は本当に地震に弱いのでしょうか？<br />
+					いいえ。<strong> それは大きな誤解です。</strong>
+				</p>
+				<div class="flex-box">
+					<div>
+						<img src="./img 2/box1_hd2_index_001.png" alt="" />
+						<h3>「旧耐震基準」にアリ</h3>
+						<p>
+							1981年に建築基準法の耐震基準が大幅に見直され、以前よりも約1.4倍の壁量が必要となりました。今回の熊本地震で倒壊した住宅を見ても、1981年以前の「旧耐震基準」の家がほとんど。倒壊の原因は耐震性の低さにあるのに、これらの古い住宅には日本古来の瓦屋根が多く使われていたことから、「重い瓦は地震に弱い」という誤ったイメージが定着してしまったのです。
+						</p>
+					</div>
+					<div>
+						<img src="./img 2/box1_hd2_index_002.png" alt="" />
+						<h3>「施工方法が古い」から</h3>
+						<p>
+							瓦屋根の施工方法は、長年「土葺き工法」や「釘打ち無しの工法」が一般的で、土の上に載っているだけ、桟木にひっかけてあるだけの不安定な状態でした。近年のガイドライン工法確立後も古い施工仕様がまだまだ残っており、今回の熊本地震でも瓦のズレや落下が多数発生しました。こうした被害状況も、瓦の耐震性の低さが指摘される一因となっています。
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!----- /main ----->
+
+		<!----- footer ----->
+		<footer></footer>
+		<!----- /footer ----->
+	</body>
 </html>
